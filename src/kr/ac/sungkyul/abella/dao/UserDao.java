@@ -24,6 +24,36 @@ public class UserDao {
 		return conn;
 	}
 	
+	public void update(UserVo vo) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			conn = getConnection();
+			String sql = "UPDATE USERS SET password=?, phone=?, birth=? WHERE id=?";
+			
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, vo.getPassword());
+			pstmt.setString(2, vo.getPhone());
+			pstmt.setString(3, vo.getBirth());
+			pstmt.setString(4, vo.getId());
+			
+			pstmt.executeUpdate();
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(conn != null) conn.close();
+				if(pstmt != null) pstmt.close();
+			} catch(SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+	}
+	
 	public UserVo get(Long no) {
 		UserVo vo = null;
 		Connection conn = null;

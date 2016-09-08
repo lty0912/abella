@@ -22,7 +22,7 @@
 			
 		</ul>		
 	    <ul>
-	        <li><a href="../menu/Info.jsp">샵안내</a></li>
+	        <li><a href="/abella/info">샵안내</a></li>
 	        <li><a href="" >공지사항</a></li>
 			<li><a href="" >이벤트</a></li>
 			<li><a href="../menu/ColorMatching.jsp">컬러매치</a></li>
