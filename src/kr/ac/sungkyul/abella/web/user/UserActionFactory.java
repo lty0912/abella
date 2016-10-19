@@ -30,6 +30,26 @@ public class UserActionFactory extends ActionFactory {
 			action = new ModifySuccessAction();
 		} else if ("logout".equals(actionName)) {
 			action = new LogoutAction();
+		} else if ("mypage".equals(actionName)) {
+			action = new MypageAction();
+		} else if ("dropout".equals(actionName)) {
+			action = new DropoutAction();
+		} else if ("dropoutform".equals(actionName)) {
+			action = new DropoutFormAction();
+		} else if ("dropoutsuccess".equals(actionName)) {
+			action = new DropoutSuccessAction();
+		} else if ("findform".equals(actionName)) {
+			action = new FindFormAction();
+		} else if ("findid".equals(actionName)) {
+			action = new FindIdAction();
+		} else if ("findpwform".equals(actionName)) {
+			action = new FindPwFormAction();
+		} else if ("findpw".equals(actionName)) {
+			action = new FindPwAction();
+		} else if ("changepw".equals(actionName)) {
+			action = new ChangePwAction();
+		} else if ("changepwsuccess".equals(actionName)) {
+			action = new ChangePwSuccessAction();
 		}
 
 			return action;

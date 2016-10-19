@@ -1,16 +1,203 @@
 @CHARSET "UTF-8";
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css" );
 
 /* reset */
-*				{ margin:0; padding:0 }
-body			{ font:0.75em "맑은 고딕", 돋움, 굴림; text-align:center }
-ul, ol			{ list-style-type: none }
+* { 
+	margin:0; 
+	padding:0;
+	outline: none;
+	text-decoration: none;
+}
+
+body { 
+	font-family: "Noto Sans KR", sans-serif;
+	letter-spacing: -0.05em;
+	/* font:0.75em "맑은 고딕", 돋움, 굴림; */ 
+	text-align: center;
+	color: #424242;
+}
+
+ul, ol { 
+	list-style-type: none; 
+}
+
+#content {
+	width: 1300px;
+	min-width: 1300px;
+	margin: 0 auto;
+}
+
+.btns:hover {
+	opacity: 0.7;
+}
+
 
 /* layout */
 
-
+.page-sub {
+	margin-top: 70px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: larger;
+	color: #4d4d4d;
+}
 
 /* header */
 
+.top_area {
+	height: 35px;
+	width: 1000px;
+	margin: 0 auto;
+}
 
+#header {
+	width: 100%;
+	min-width: 1300px;
+}
+
+.top_menu {
+	height: 35px;
+	width: 100%;
+	background-color: #fafafa;
+	border-bottom: solid 1px #e4e4e4;
+}
+
+.username {
+	font-size: 10pt;
+	font-style: bord;
+}
+
+.top_sns {
+	left: 0;
+	float: left;
+}
+
+.top_sns li {
+	display: inline-block;
+	margin-top: 3px;
+}
+
+.top_sns img {
+	height: 25px;
+	margin: 2px 4px 2px 4px;
+}
+
+.top_usermenu {
+	text-align: right;
+	right: 0;
+}
+
+.top_usermenu li {
+	display: inline-block;
+	margin: 8px;
+}
+
+#loginFrm a {
+	cursor: pointer;
+}
+
+.top_menu a {
+	color: #282828;
+	font-size: 10pt;
+	text-decoration: none;
+}
+
+#logo {
+	width: 100px;
+	margin: 0 600px 0 600px;
+	position: absolute;
+	top: 80px;
+	z-index: 10;
+}
+
+#logo img {
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.menu_area {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.menubar {
+	height: 120px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menubar ul {
+	width: 1265px;
+	position: absolute;
+	top: 104px;
+}
+
+.menubar li {
+	width: 140px;
+	display: inline-block;
+}
+
+#m01 a {
+	text-align: right;
+	width: 110px;
+}
+
+#m05 {
+	margin-left: 110px;
+}
+
+#m06 {
+	width: 110px;
+}
+
+#m06 a {
+	text-align: left;
+}
+
+#m07 a {
+	text-align: left;
+}
+
+.menubar li a {
+	display: block;
+	padding: 10px;
+	width: 115px;
+	text-decoration: none;
+	font-size: 14pt;
+	color: #f5f5f5;
+    margin: 0 auto;
+    transition-duration: 0.2s;
+}
+
+.menubar a:hover {
+	color: #fe7e8b;
+}
 
 /* footer */
+
+footer {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+#copyright {
+	font-size: 9pt;
+	font-family: sans-serif;
+	color: #777777;
+	border-top: solid 1px #d2d2d2;
+	padding-top: 10px;
+}
+
+#SNS {
+	margin: 6px;
+}
+
+#SNS a {
+	text-decoration: none;
+}
+
+#SNS img {
+	width: 30px;
+	height: 30px; 
+	margin: 3px;
+}

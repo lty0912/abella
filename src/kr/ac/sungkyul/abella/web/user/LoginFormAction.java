@@ -13,6 +13,12 @@ public class LoginFormAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = request.getParameter("url");
+		if(url != null){
+			int s1 = url.indexOf("/", 7);
+			url = url.substring(s1);
+			request.getSession().setAttribute("url", url);
+		}
 		WebUtil.forward("/WEB-INF/views/user/loginform.jsp", request, response);
 	}
 

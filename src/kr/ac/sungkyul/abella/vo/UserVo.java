@@ -12,6 +12,14 @@ public class UserVo {
 	private String phone;
 	private String mileage;
 	private String birth;
+	private Long typeNo;
+	
+	public Long getType_no() {
+		return typeNo;
+	}
+	public void setTypeNo(Long typeNo) {
+		this.typeNo = typeNo;
+	}
 	public Long getNo() {
 		return no;
 	}

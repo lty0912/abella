@@ -14,8 +14,6 @@
 100% { left: -400%; }
 }
 
-
-div#slider { overflow: hidden; }
 div#slider figure img { width: 20%; float: left; cursor: pointer; }
 div#slider figure { 
   position: relative;
@@ -30,8 +28,45 @@ div#slider figure {
 }
 
 #slider {
-	float: left;	
-	margin-right: 10px;
-	width: 800px; 	
+	min-width: 1300px;
+	overflow: hidden;
+	height: 600px;
+	float: left;
+	position: relative;
+/* 	margin-right: 10px; */
+	top: -120px;
+	z-index: -1;
 }
 
+#content {
+	position: relative;
+}
+
+.main_content1 {
+	width: 1300px;
+	min-width: 1300px;
+	margin: 0 auto;
+	position: relative;
+	top: -70px;
+}
+
+#main_about {
+	float: left;
+	width: 490px;
+	margin: 0 10px 0 150px;
+}
+
+#main_colormatch {
+	float: left;
+	width: 490px;
+	margin: 0 150px 0 10px;	
+}
+
+#link_gallery {
+	float: right;
+	width: 374px;
+	height: 300px;
+	display: inline-block;
+	position: relative;
+	top: -98px;
+} /* 이미지 크기는 #link_gallery 너비, 높이 맞춰서 */

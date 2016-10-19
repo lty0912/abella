@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/abella/assets/css/user.css" rel="stylesheet" type="text/css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -14,7 +15,8 @@
 		<c:import url='/WEB-INF/views/include/header.jsp'/>
 		<div id="wrapper">
 			<div id="content">
-				<img src="/abella/assets/images/shopinfo.png">			
+				<div class="page-sub">ABOUT</div>
+				<img id="img_shopinfo" src="/abella/assets/images/shopinfo.png">			
 			</div>
 		</div>
 		<c:import url='/WEB-INF/views/include/footer.jsp'/>	

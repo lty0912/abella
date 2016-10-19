@@ -34,10 +34,10 @@
 					<input type="button" id="btn-checkid" value="id 중복체크">
 					
 					<label class="block-label">패스워드</label>
-					<input name="password" type="password" value="">
+					<input id="password" name="password" type="password" value="">
 					
 					<label class="block-label">패스워드 확인</label>
-					<input name="password-confirm" type="password" value="">
+					<input id="password-confirm" name="password-confirm" type="password" value="">
 					
 					<label class="block-label">비밀번호 힌트 질문</label>
 					<SELECT NAME="hint" SIZE=1>
@@ -56,7 +56,7 @@
 					<label class="block-label" for="birth">생일</label>
 					<input id="birth" name="birth" type="text" value="" placeholder="형식 - 19920912">	
 					
-					<input type="submit" value="가입하기">
+					<input id="ck" type="submit" value="가입하기" >
 					
 				</form>
 			</div>

@@ -8,6 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="/abella/assets/js/jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="/abella/assets/js/modify.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -24,10 +25,10 @@
 					<input id="id" name="id" type="text" value=${user.id } readonly="readonly">
 					
 					<label class="block-label">패스워드</label>
-					<input name="password" type="password" value="">
+					<input id="password" name="password" type="password" value="">
 					
 					<label class="block-label">패스워드 확인</label>
-					<input name="password-confirm" type="password" value="">		
+					<input id="password-confirm" name="password-confirm" type="password" value="">		
 					
 					<label class="block-label" for="phone">전화번호</label>
 					<input id="phone" name="phone" type="text" value=${user.phone } >
@@ -36,7 +37,6 @@
 					<input id="birth" name="birth" type="text" value=${user.birth } >
 					
 					<input type="submit" value="수정하기">
-					
 				</form>
 			</div>
 		</div>

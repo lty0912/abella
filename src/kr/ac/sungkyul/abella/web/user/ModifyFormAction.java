@@ -17,7 +17,16 @@ public class ModifyFormAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		UserVo vo = (UserVo) session.getAttribute("authUser");
+		
+		UserVo vo = new UserVo();
+		
+		if ( session.getAttribute("admin") != null ) {
+			vo = (UserVo) session.getAttribute("admin");
+		} else if ( session.getAttribute("staff") != null ) {
+			vo = (UserVo) session.getAttribute("staff");
+		} else {
+			vo = (UserVo) session.getAttribute("authUser");
+		}
 		
 		vo = new UserDao().get(vo.getNo());
 		request.setAttribute("user", vo);

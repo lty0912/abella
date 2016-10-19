@@ -27,7 +27,7 @@ $(function(){
 			return false;
 		}
 		
-		if( $("#password").val()==$("#password-confirm").val() ) {
+		if( $("#password").val() != $("#password-confirm").val() ) {
 			alert("패스워드 확인이 일치하지 않습니다.");
 			$( "input[type='password']" ).focus();
 			return false;

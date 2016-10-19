@@ -1,6 +1,5 @@
 package kr.ac.sungkyul.abella.web.information;
 
-import kr.ac.sungkyul.abella.web.main.MainAction;
 import kr.ac.sungkyul.web.Action;
 import kr.ac.sungkyul.web.ActionFactory;
 
